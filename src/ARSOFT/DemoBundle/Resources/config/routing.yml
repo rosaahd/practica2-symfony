@@ -1,0 +1,10 @@
+arsoft_demo_homepage:
+    pattern:  /articulos
+    defaults: { _controller: ARSOFTDemoBundle:Listar:listarArticulos }
+
+
+articulo_show:
+    pattern: /articulo/{id}
+    defaults: { _controller: ARSOFTDemoBundle:Listar:show, id:2 }
+    requirements:
+        id: \d+

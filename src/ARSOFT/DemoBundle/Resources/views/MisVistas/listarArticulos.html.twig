@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<h1>Listado de Artículos</h1>
+
+<ul>
+    {% for articulo in articulos %}
+        <li>
+            <a href="{{ path('articulo_show', {'id': articulo.id}) }}">{{ articulo.title }}</a>
+        </li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
+
